@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import Navigation from './nav'
+import Nav from './nav'
 
 const defaultTitle = 'Petaluma GAP AVA'
 const defaultDescription = "California's newsest American American Viticultural Area (AVA)"
@@ -29,7 +29,7 @@ const Layout = ({ children, title = defaultTitle, description = defaultDescripti
       <link rel="stylesheet" href="/static/vation-theme/css/responsive.css" />
       <script src="/static/vation-theme/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" />
     </Head>
-    <Navigation />
+    <Nav />
     <div className="container-fluid">
       {children}
     </div>
