@@ -59,110 +59,60 @@ var cardTitleStyles = {
   padding: '0'
 };
 
-var CardPair = function CardPair(_ref2) {
-  var cardOne = _ref2.cardOne,
-      cardTwo = _ref2.cardTwo;
-  return _react2.default.createElement('div', { className: 'tg-features', __source: {
+var FeaturedWineryCard = function FeaturedWineryCard(_ref2) {
+  var cardTitleStyles = _ref2.cardTitleStyles,
+      feature = _ref2.feature,
+      name = _ref2.name,
+      description = _ref2.description;
+  return _react2.default.createElement('div', { className: 'col-xs-12 col-sm-6 col-md-6 col-lg-6', style: { paddingTop: '40px' }, __source: {
       fileName: _jsxFileName,
       lineNumber: 25
     }
-  }, _react2.default.createElement('div', { className: 'col-xs-12 col-sm-6 col-md-6 col-lg-6', __source: {
+  }, _react2.default.createElement('div', { className: 'tg-feature', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    }
+  }, _react2.default.createElement('figure', {
+    __source: {
       fileName: _jsxFileName,
       lineNumber: 27
     }
-  }, _react2.default.createElement('div', { className: 'tg-feature', __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    }
-  }, _react2.default.createElement('figure', {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    }
   }, _react2.default.createElement('a', { href: 'javascript:void(0);(0);', __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
-    }
-  }, _react2.default.createElement('img', { src: '/static/vation-theme/images/allhome/1/img-01.jpg', alt: 'image description', __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    }
-  }))), _react2.default.createElement('div', { className: 'tg-featurecontent', __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    }
-  }, _react2.default.createElement('div', { style: cardTitleStyles, className: 'tg-title tg-titlevone', __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    }
-  }, _react2.default.createElement('h3', {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
-    }
-  }, _react2.default.createElement('span', {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    }
-  }, cardOne.feature), cardOne.name)), _react2.default.createElement('div', { className: 'tg-description', __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    }
-  }, _react2.default.createElement('p', {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    }
-  }, cardOne.description))))), _react2.default.createElement('div', { className: 'col-xs-12 col-sm-6 col-md-6 col-lg-6', __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46
-    }
-  }, _react2.default.createElement('div', { className: 'tg-feature', __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    }
-  }, _react2.default.createElement('figure', {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
-    }
-  }, _react2.default.createElement('a', { href: 'javascript:void(0);(0);', __source: {
-      fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 27
     }
   }, _react2.default.createElement('img', { src: '/static/vation-theme/images/allhome/1/img-02.jpg', alt: 'image description', __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 27
     }
   }))), _react2.default.createElement('div', { className: 'tg-featurecontent', __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 28
     }
   }, _react2.default.createElement('div', { style: cardTitleStyles, className: 'tg-title tg-titlevone', __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 29
     }
   }, _react2.default.createElement('h3', {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 30
     }
   }, _react2.default.createElement('span', {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 31
     }
-  }, cardTwo.feature), cardTwo.name)), _react2.default.createElement('div', { className: 'tg-description', __source: {
+  }, feature), name)), _react2.default.createElement('div', { className: 'tg-description', __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 35
     }
   }, _react2.default.createElement('p', {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 36
     }
-  }, cardOne.description))))));
+  }, description)))));
 };
 
 var featuredWinery1 = {
@@ -176,11 +126,13 @@ var featuredWinery2 = {
   description: 'Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos in. Et duo salutatus consequat, et epicurei euripidis mei dolor sit amet, consectetuer adipiscing elit.'
 };
 
+var featuredWineries = [featuredWinery1, featuredWinery2, featuredWinery1, featuredWinery2];
+
 exports.default = function () {
   return _react2.default.createElement(_layout2.default, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 63
     }
   }, _react2.default.createElement(_heroImg2.default, {
     header: 'Petaluma Gap',
@@ -188,31 +140,226 @@ exports.default = function () {
     cta: 'Checkout the Wineries',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 64
     }
   }), _react2.default.createElement('section', { className: 'tg-sectionspace tg-haslayout tg-paddingbottomzero', __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 69
     }
   }, _react2.default.createElement('div', { className: 'container', __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 70
     }
   }, _react2.default.createElement('div', { className: 'row', __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 71
     }
   }, _react2.default.createElement(SectionHeader, {
     mainText: 'Featured Gap Wineries',
     subText: 'Mauris in rutrum nunc. Aenean in lectus id mi sollicitudin placerat. Sed porta ac libero eget maximus. Donec dictum, sem quis ullamcorper porta,',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 73
     }
-  }), _react2.default.createElement(CardPair, { cardOne: featuredWinery1, cardTwo: featuredWinery2, __source: {
+  }), featuredWineries.map(function (winery) {
+    return _react2.default.createElement(FeaturedWineryCard, {
+      feature: winery.feature,
+      name: winery.name,
+      description: winery.description,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 81
+      }
+    });
+  })))), _react2.default.createElement('section', { 'class': 'tg-sectionspace tg-haslayout tg-bgaboutus', __source: {
       fileName: _jsxFileName,
       lineNumber: 94
     }
-  })))));
+  }, _react2.default.createElement('div', { 'class': 'container', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 95
+    }
+  }, _react2.default.createElement('div', { 'class': 'row', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 96
+    }
+  }, _react2.default.createElement('div', { 'class': 'col-xs-12 col-sm-12 col-md-12 col-lg-12', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97
+    }
+  }, _react2.default.createElement('div', { 'class': 'tg-aboutus', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 98
+    }
+  }, _react2.default.createElement('div', { 'class': 'tg-sectionhead tg-sectionheadvthree', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99
+    }
+  }, _react2.default.createElement('div', { 'class': 'tg-sectiontitle', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 100
+    }
+  }, _react2.default.createElement('h2', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101
+    }
+  }, _react2.default.createElement('span', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101
+    }
+  }, 'Based in Sydney, Australia'), 'We\u2019re a digital studio that believe in the power of great ideas.'))), _react2.default.createElement('div', { 'class': 'tg-description', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 104
+    }
+  }, _react2.default.createElement('p', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 105
+    }
+  }, 'Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos in. Et duo salutatus consequat, Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae.')), _react2.default.createElement('div', { 'class': 'tg-themefeatures tg-themefeaturesvtwo', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 107
+    }
+  }, _react2.default.createElement('div', { 'class': 'tg-themefeature', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 108
+    }
+  }, _react2.default.createElement('span', { 'class': 'tg-themefeatureicon', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 109
+    }
+  }, _react2.default.createElement('i', { 'class': 'icon-lightbulb', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 109
+    }
+  })), _react2.default.createElement('h3', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 110
+    }
+  }, 'Designing Department'), _react2.default.createElement('div', { 'class': 'tg-description', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 111
+    }
+  }, _react2.default.createElement('p', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 112
+    }
+  }, 'Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos consequat.'))), _react2.default.createElement('div', { 'class': 'tg-themefeature', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 115
+    }
+  }, _react2.default.createElement('span', { 'class': 'tg-themefeatureicon', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 116
+    }
+  }, _react2.default.createElement('i', { 'class': 'icon-lightbulb', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 116
+    }
+  })), _react2.default.createElement('h3', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117
+    }
+  }, 'Designing Department'), _react2.default.createElement('div', { 'class': 'tg-description', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118
+    }
+  }, _react2.default.createElement('p', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 119
+    }
+  }, 'Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos consequat.'))), _react2.default.createElement('div', { 'class': 'tg-themefeature', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 122
+    }
+  }, _react2.default.createElement('span', { 'class': 'tg-themefeatureicon', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123
+    }
+  }, _react2.default.createElement('i', { 'class': 'icon-lightbulb', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123
+    }
+  })), _react2.default.createElement('h3', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124
+    }
+  }, 'Designing Department'), _react2.default.createElement('div', { 'class': 'tg-description', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125
+    }
+  }, _react2.default.createElement('p', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126
+    }
+  }, 'Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos consequat.')))))))), _react2.default.createElement('ul', { className: 'tg-statistics', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 134
+    }
+  }, _react2.default.createElement('li', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 135
+    }
+  }, _react2.default.createElement('h3', { 'data-from': '0', 'data-to': '200000', 'data-speed': '5000', 'data-refresh-interval': '50', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 136
+    }
+  }, '200,000'), _react2.default.createElement('h4', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 137
+    }
+  }, 'Total Acres')), _react2.default.createElement('li', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 139
+    }
+  }, _react2.default.createElement('h3', { 'data-from': '0', 'data-to': '4000', 'data-speed': '5000', 'data-refresh-interval': '50', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 140
+    }
+  }, '4,000'), _react2.default.createElement('h4', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 141
+    }
+  }, 'Acres of Vineyards')), _react2.default.createElement('li', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 143
+    }
+  }, _react2.default.createElement('h3', { 'data-from': '0', 'data-to': '80', 'data-speed': '5000', 'data-refresh-interval': '50', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 144
+    }
+  }, '80'), _react2.default.createElement('h4', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 145
+    }
+  }, 'Plus Vineyards')), _react2.default.createElement('li', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 147
+    }
+  }, _react2.default.createElement('h3', { 'data-from': '0', 'data-to': '150', 'data-speed': '5000', 'data-refresh-interval': '50', __source: {
+      fileName: _jsxFileName,
+      lineNumber: 148
+    }
+  }, '150'), _react2.default.createElement('h4', {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 149
+    }
+  }, 'Yrs Farming Grapes')))));
 };
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbIkxheW91dCIsIkhlcm9JbWciLCJTZWN0aW9uSGVhZGVyIiwibWFpblRleHQiLCJzdWJUZXh0IiwiY2FyZFRpdGxlU3R5bGVzIiwicGFkZGluZyIsIkNhcmRQYWlyIiwiY2FyZE9uZSIsImNhcmRUd28iLCJmZWF0dXJlIiwibmFtZSIsImRlc2NyaXB0aW9uIiwiZmVhdHVyZWRXaW5lcnkxIiwiZmVhdHVyZWRXaW5lcnkyIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7O0FBQUEsQUFBTyxBQUFZOzs7O0FBQ25CLEFBQU8sQUFBYTs7Ozs7Ozs7O0FBRXBCLElBQU0sZ0JBQWdCLFNBQWhCLEFBQWdCLG9CQUFBO01BQUEsQUFBRyxnQkFBSCxBQUFHO01BQUgsQUFBYSxlQUFiLEFBQWE7eUJBQ2pDLGNBQUEsU0FBSyxXQUFMLEFBQWU7Z0JBQWY7a0JBQUEsQUFDRTtBQURGO0dBQUEsa0JBQ0UsY0FBQSxTQUFLLFdBQUwsQUFBZTtnQkFBZjtrQkFBQSxBQUNFO0FBREY7cUJBQ0UsY0FBQSxTQUFLLFdBQUwsQUFBZTtnQkFBZjtrQkFBQSxBQUNFO0FBREY7cUJBQ0UsY0FBQTs7Z0JBQUE7a0JBQUEsQUFBSztBQUFMO0FBQUEsS0FGSixBQUNFLEFBQ0UsQUFFRiw0QkFBQSxjQUFBLFNBQUssV0FBTCxBQUFlO2dCQUFmO2tCQUFBLEFBQ0U7QUFERjtxQkFDRSxjQUFBOztnQkFBQTtrQkFBQSxBQUNHO0FBREg7QUFBQSxLQVBjLEFBQ3BCLEFBQ0UsQUFJRSxBQUNFO0FBUFI7O0FBY0E7QUFDQTtBQUNBLElBQU07V0FBTixBQUF3QixBQUNiO0FBRGEsQUFDdEI7O0FBR0YsSUFBTSxXQUFXLFNBQVgsQUFBVyxnQkFBQTtNQUFBLEFBQUcsZ0JBQUgsQUFBRztNQUFILEFBQVksZ0JBQVosQUFBWTt5QkFDM0IsY0FBQSxTQUFLLFdBQUwsQUFBZTtnQkFBZjtrQkFBQSxBQUVFO0FBRkY7R0FBQSxrQkFFRSxjQUFBLFNBQUssV0FBTCxB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
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbIkxheW91dCIsIkhlcm9JbWciLCJTZWN0aW9uSGVhZGVyIiwibWFpblRleHQiLCJzdWJUZXh0IiwiY2FyZFRpdGxlU3R5bGVzIiwicGFkZGluZyIsIkZlYXR1cmVkV2luZXJ5Q2FyZCIsImZlYXR1cmUiLCJuYW1lIiwiZGVzY3JpcHRpb24iLCJwYWRkaW5nVG9wIiwiZmVhdHVyZWRXaW5lcnkxIiwiZmVhdHVyZWRXaW5lcnkyIiwiZmVhdHVyZWRXaW5lcmllcyIsIm1hcCIsIndpbmVyeSJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7OztBQUFBLEFBQU8sQUFBWTs7OztBQUNuQixBQUFPLEFBQWE7Ozs7Ozs7OztBQUVwQixJQUFNLGdCQUFnQixTQUFoQixBQUFnQixvQkFBQTtNQUFBLEFBQUcsZ0JBQUgsQUFBRztNQUFILEFBQWEsZUFBYixBQUFhO3lCQUNqQyxjQUFBLFNBQUssV0FBTCxBQUFlO2dCQUFmO2tCQUFBLEFBQ0U7QUFERjtHQUFBLGtCQUNFLGNBQUEsU0FBSyxXQUFMLEFBQWU7Z0JBQWY7a0JBQUEsQUFDRTtBQURGO3FCQUNFLGNBQUEsU0FBSyxXQUFMLEFBQWU7Z0JBQWY7a0JBQUEsQUFDRTtBQURGO3FCQUNFLGNBQUE7O2dCQUFBO2tCQUFBLEFBQUs7QUFBTDtBQUFBLEtBRkosQUFDRSxBQUNFLEFBRUYsNEJBQUEsY0FBQSxTQUFLLFdBQUwsQUFBZTtnQkFBZjtrQkFBQSxBQUNFO0FBREY7cUJBQ0UsY0FBQTs7Z0JBQUE7a0JBQUEsQUFDRztBQURIO0FBQUEsS0FQYyxBQUNwQixBQUNFLEFBSUUsQUFDRTtBQVBSOztBQWNBO0FBQ0E7QUFDQSxJQUFNO1dBQU4sQUFBd0IsQUFDYjtBQURhLEFBQ3RCOztBQUdGLElBQU0scUJBQXFCLFNBQXJCLEFBQXFCLDBCQUFBO01BQUEsQUFBRyx3QkFBSCxBQUFHO01BQUgsQUFBb0IsZ0JBQXBCLEFBQW9CO01BQXBCLEFBQTZCLGFBQTdCLEFBQTZCO01BQTdCLEFB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WTtnQkFBWjtrQkFBQSxBQUFrQztBQUFsQzswQ0FBcUMsU0FBSCxBQUFTO2dCQUFUO2tCQURwQyxBQUNFLEFBQWtDLEFBQ2xDO0FBRGtDO3VCQUNsQyxjQUFBOztnQkFBQTtrQkFBQTtBQUFBO0FBQUEsS0FGRixBQUVFLEFBQ0EseUNBQUEsY0FBQSxTQUFLLFNBQUwsQUFBVztnQkFBWDtrQkFBQSxBQUNFO0FBREY7cUJBQ0UsY0FBQTs7Z0JBQUE7a0JBQUE7QUFBQTtBQUFBLEtBaENoQixBQUNFLEFBQ0UsQUFDRSxBQUNFLEFBU0UsQUFlRSxBQUdFLEFBQ0UsQUFRZCw4SUFBQSxjQUFBLFFBQUksV0FBSixBQUFjO2dCQUFkO2tCQUFBLEFBQ0U7QUFERjtxQkFDRSxjQUFBOztnQkFBQTtrQkFBQSxBQUNFO0FBREY7QUFBQSxxQkFDRSxjQUFBLFFBQUksYUFBSixBQUFjLEtBQUksV0FBbEIsQUFBMEIsVUFBUyxjQUFuQyxBQUE4QyxRQUFPLHlCQUFyRCxBQUEyRTtnQkFBM0U7a0JBQUE7QUFBQTtLQURGLEFBQ0UsQUFDQSw0QkFBQSxjQUFBOztnQkFBQTtrQkFBQTtBQUFBO0FBQUEsS0FISixBQUNFLEFBRUUsQUFFRixpQ0FBQSxjQUFBOztnQkFBQTtrQkFBQSxBQUNFO0FBREY7QUFBQSxxQkFDRSxjQUFBLFFBQUksYUFBSixBQUFjLEtBQUksV0FBbEIsQUFBMEIsUUFBTyxjQUFqQyxBQUE0QyxRQUFPLHlCQUFuRCxBQUF5RTtnQkFBekU7a0JBQUE7QUFBQTtLQURGLEFBQ0UsQUFDQSwwQkFBQSxjQUFBOztnQkFBQTtrQkFBQTtBQUFBO0FBQUEsS0FQSixBQUtFLEFBRUUsQUFFRix3Q0FBQSxjQUFBOztnQkFBQTtrQkFBQSxBQUNFO0FBREY7QUFBQSxxQkFDRSxjQUFBLFFBQUksYUFBSixBQUFjLEtBQUksV0FBbEIsQUFBMEIsTUFBSyxjQUEvQixBQUEwQyxRQUFPLHlCQUFqRCxBQUF1RTtnQkFBdkU7a0JBQUE7QUFBQTtLQURGLEFBQ0UsQUFDQSx1QkFBQSxjQUFBOztnQkFBQTtrQkFBQTtBQUFBO0FBQUEsS0FYSixBQVNFLEFBRUUsQUFFRixvQ0FBQSxjQUFBOztnQkFBQTtrQkFBQSxBQUNFO0FBREY7QUFBQSxxQkFDRSxjQUFBLFFBQUksYUFBSixBQUFjLEtBQUksV0FBbEIsQUFBMEIsT0FBTSxjQUFoQyxBQUEyQyxRQUFPLHlCQUFsRCxBQUF3RTtnQkFBeEU7a0JBQUE7QUFBQTtLQURGLEFBQ0UsQUFDQSx3QkFBQSxjQUFBOztnQkFBQTtrQkFBQTtBQUFBO0FBQUEsS0F2RkssQUFDYixBQStCRSxBQXdDRSxBQWFFLEFBRUU7QUF2RlYiLCJmaWxlIjoiaW5kZXguanM/ZW50cnkiLCJzb3VyY2VSb290IjoiL1VzZXJzL2t5bGVkb2hlcnR5L1NyYy9zcGlrZXMvbmV4dGpzL3BldGFsdW1hZ2FwIn0=
