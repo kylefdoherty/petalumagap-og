@@ -1,5 +1,5 @@
 /*==========================================================================================
-									Primery Theme Colors									
+									Primery Theme Colors
 ==========================================================================================*/
 /*=============================================
 			Theme Text Color
@@ -45,7 +45,7 @@ a:active,
 .tg-formstartproject .form-group .tg-btn,
 .tg-contactusvtwo .tg-address li figure:after,
 .tg-postquoteblue,
-.effect-18 ~ .focus-border:before, 
+.effect-18 ~ .focus-border:before,
 .effect-18 ~ .focus-border:after,
 .tg-headervsix .navbar-toggle .icon-bar{ background:#3b55e6; }
 .tg-parallaxservices,
@@ -55,7 +55,7 @@ a:active,
 .tg-portfoliovfive .tg-portfolioitem:hover figcaption,
 .tg-blogpostvone .tg-post:hover figure figcaption,
 .tg-hover,
-.tg-portfolioitem figure:hover .tg-hovervone{ background:rgba(59,85,230, 0.80); }
+.tg-portfolioitem figure:hover .tg-hovervone{ background:rgba(59,85,230, 0.70); }
 /*=============================================
 			Theme Border Color
 =============================================*/
@@ -70,7 +70,7 @@ blockquote,
 .tg-formcontactus .form-group textarea:focus,
 .tg-headervsix .navbar-toggle{ border-color: #3b55e6; }
 /*==========================================================================================
-									Secondary Theme Colors									
+									Secondary Theme Colors
 ==========================================================================================*/
 /*=============================================
 			Theme Text Color
@@ -129,7 +129,7 @@ input:focus,
 .tg-btn:hover,
 .tg-darkcontent .tg-slidercontent .tg-btn:hover{ border-color: #ea205a; }
 /*==========================================================================================
-									Others Theme Colors									
+									Others Theme Colors
 ==========================================================================================*/
 /*=============================================
 			Theme Text Color

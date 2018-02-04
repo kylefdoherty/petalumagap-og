@@ -1,9 +1,11 @@
 import Head from 'next/head'
 
+import Footer from './footer'
 import Nav from './nav'
 
 const defaultTitle = 'Petaluma GAP AVA'
 const defaultDescription = "California's newsest American American Viticultural Area (AVA)"
+const contentStyles = {}
 
 const Layout = ({ children, title = defaultTitle, description = defaultDescription }) => (
   <div>
@@ -29,14 +31,33 @@ const Layout = ({ children, title = defaultTitle, description = defaultDescripti
       <link rel="stylesheet" href="/static/vation-theme/css/responsive.css" />
       <script src="/static/vation-theme/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js" />
     </Head>
-    <Nav />
-    <div className="container-fluid">
+
+    <div id="tg-wrapper" className="tg-wrapper tg-haslayout">
+      <Nav />
       {children}
+      <Footer />
     </div>
-    <div className="scripts">
-      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous" />
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous" />
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous" />
+
+    <div className='petaluma-gap-content__scripts'>
+      <script src="https://maps.google.com/maps/api/js?key=AIzaSyCR-KEWAVCn52mSdeVeTqZjtqbmVJyfSus&language=en" />
+      <script src="/static/vation-theme/js/vendor/jquery-library.js" />
+      <script src="/static/vation-theme/js/vendor/bootstrap.min.js" />
+      <script src="/static/vation-theme/js/jquery.singlePageNav.min.js" />
+      <script src="/static/vation-theme/js/jquery-scrolltofixed.js" />
+      <script src="/static/vation-theme/js/owl.carousel.min.js" />
+      <script src="/static/vation-theme/js/jquery.vide.min.js" />
+      <script src="/static/vation-theme/js/royalslider.min.js" />
+      <script src="/static/vation-theme/js/scrollbar.min.js" />
+      <script src="/static/vation-theme/js/isotope.pkgd.js" />
+      <script src="/static/vation-theme/js/prettyPhoto.js" />
+      <script src="/static/vation-theme/js/sticky-kit.js" />
+      <script src="/static/vation-theme/js/countdown.js" />
+      <script src="/static/vation-theme/js/parallax.js" />
+      <script src="/static/vation-theme/js/collapse.js" />
+      <script src="/static/vation-theme/js/countTo.js" />
+      <script src="/static/vation-theme/js/appear.js" />
+      <script src="/static/vation-theme/js/gmap3.js" />
+      <script src="/static/vation-theme/js/main.js" />
     </div>
   </div>
 )

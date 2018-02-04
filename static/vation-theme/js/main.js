@@ -1,7 +1,7 @@
 "use strict";
 jQuery(function () {
 	/*--------------------------------------
-			MOBILE MENU						
+			MOBILE MENU
 	--------------------------------------*/
 	function collapseMenu(){
 		jQuery('.tg-navigation ul li.menu-item-has-children, .tg-navigation ul li.menu-item-has-mega-menu').prepend('<span class="tg-dropdowarrow"><i class="fa fa-angle-down"></i></span>');
@@ -12,7 +12,7 @@ jQuery(function () {
 	}
 	collapseMenu();
 	/*--------------------------------------
-			FIXED HEADER					
+			FIXED HEADER
 	--------------------------------------*/
 	if(jQuery('.tg-fixedheader').length > 0){
 		jQuery(window).scroll(function() {
@@ -81,7 +81,7 @@ jQuery(function () {
 		});
 	}
 	/*---------------------------------------
-			FULL PAGE SEARCH				
+			FULL PAGE SEARCH
 	---------------------------------------*/
 	jQuery('a[href="#tg-search"]').on('click', function(event) {
 		event.preventDefault();
@@ -123,6 +123,7 @@ jQuery(function () {
 	-------------------------------------- */
 	var _tg_homeslidersame = jQuery('[id="tg-homeslidervtwo"], [id="tg-homeslidervthree"], [id="tg-homeslidervfour"], [id="tg-homeslidervfive"], [id="tg-homeslidervseven"], [id="tg-homesliderveight"]');
 	if(_tg_homeslidersame.hasClass('tg-homeslider')){
+		console.log("BOOM")
 		_tg_homeslidersame.owlCarousel({
 			items: 1,
 			nav:true,
