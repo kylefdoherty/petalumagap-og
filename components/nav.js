@@ -1,5 +1,18 @@
 import Link from 'next/link'
 
+import ActiveLink from './active-link'
+
+const navLinks = [
+  {
+    name: 'Home',
+    href: '/',
+  },
+  {
+    name: 'Wineries',
+    href: '/wineries',
+  },
+]
+
 const Nav = () => {
   const navStyles = {}
 
@@ -10,9 +23,8 @@ const Nav = () => {
           <div className="tg-headercontent tg-headercontentdark">
             <strong className="tg-logo">
               <a href="">
-                <img className="tg-logoblack" src="/static/vation-theme/images/logob00.png" alt="company logo here" />
-                <img className="tg-logowhite" src="/static/vation-theme/images/logo.png" alt="company logo here" />
-                <img src="/static/vation-theme/images/logob.png" alt="company logo here" />
+                <img className="tg-logowhite" src="/static/images/petaluma-gap-logo.png" alt="company logo here" />
+                <img src="/static/images/petaluma-gap-logo.png" alt="company logo here" />
               </a>
             </strong>
             <nav id="tg-nav" className="tg-nav">
@@ -26,16 +38,17 @@ const Nav = () => {
               </div>
               <div id="tg-navigation" className="collapse navbar-collapse tg-navigation">
                 <ul>
-                  <li className="menu-item-has-children current-menu-item">
-                    <Link href="/">
-                      <a>Home</a>
-                    </Link>
-                  </li>
-                  <li className="menu-item-has-children">
-                    <Link href="/wineries">
-                      <a>Wineries</a>
-                    </Link>
-                  </li>
+                  {
+                    navLinks.map(link => {
+                      return(
+                        <ActiveLink
+                          key={link.name}
+                          href={link.href}
+                          name={link.name}
+                        />
+                      )
+                    })
+                  }
                 </ul>
               </div>
             </nav>

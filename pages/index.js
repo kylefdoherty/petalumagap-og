@@ -17,14 +17,11 @@ const SectionHeader = ({ mainText, subText }) =>
 
 // TODO - eventually can just have the cards on their own and stick them in
 // whatever kind of container. Not sure what that will look like yet though
-const cardTitleStyles = {
-  padding: '0',
-}
 
-const FeaturedWineryCard = ({ cardTitleStyles, feature, name, description }) =>
+const FeaturedWineryCard = ({ cardTitleStyles, feature, name, description, img }) =>
   <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6" style={{ paddingTop: '40px', }}>
       <div className="tg-feature">
-        <figure><a href="javascript:void(0);(0);"><img src="/static/vation-theme/images/allhome/1/img-02.jpg" alt="image description"/></a></figure>
+        <figure><a href=""><img src={img.url} alt={img.altText} /></a></figure>
         <div className="tg-featurecontent">
           <div style={cardTitleStyles} className="tg-title tg-titlevone">
             <h3>
@@ -52,21 +49,55 @@ const featuredWinery2 ={
   description: 'Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos in. Et duo salutatus consequat, et epicurei euripidis mei dolor sit amet, consectetuer adipiscing elit.'
 }
 
+
 const featuredWineries = [
-  featuredWinery1,
-  featuredWinery2,
-  featuredWinery1,
-  featuredWinery2,
+  {
+    feature: 'Winery Feature',
+    name: 'Kastania Vineyards',
+    description: 'Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos in. Et duo salutatus consequat, et epicurei euripidis mei dolor sit amet, consectetuer adipiscing elit.',
+    img: {
+      url: '/static/images/wineries/kastania.jpg',
+      altText: 'Kstania Vineyards',
+    },
+  },
+  {
+    feature: 'Winery Feature',
+    name: 'Three Sticks',
+    description: 'Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos in. Et duo salutatus consequat, et epicurei euripidis mei dolor sit amet, consectetuer adipiscing elit.',
+    img: {
+      url: '/static/images/wineries/kastania.jpg',
+      altText: 'Kstania Vineyards',
+    },
+  },
+  {
+    feature: 'Winery Feature',
+    name: 'Karah Estate',
+    description: 'Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos in. Et duo salutatus consequat, et epicurei euripidis mei dolor sit amet, consectetuer adipiscing elit.',
+    img: {
+      url: '/static/images/wineries/kastania.jpg',
+      altText: 'Kstania Vineyards',
+    },
+  },
+  {
+    feature: 'Winery Feature',
+    name: 'Fogline Vineyards',
+    description: 'Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos in. Et duo salutatus consequat, et epicurei euripidis mei dolor sit amet, consectetuer adipiscing elit.',
+    img: {
+      url: '/static/images/wineries/kastania.jpg',
+      altText: 'Kstania Vineyards',
+    },
+  },
 ]
 
 export default () =>
   <Layout>
     <HeroImg
-      header="Petaluma Gap"
-      subHeader="The newsest and most interesting American Viticulture Area in the U.S."
+      header="Petaluma Gap AVA"
+      subHeader="The newsest and most unique American Viticulture Area in the U.S."
       cta="Checkout the Wineries"
+      ctaHref="/wineries"
     />
-    <section className="tg-sectionspace tg-haslayout tg-paddingbottomzero">
+    <section style={{ marginBottom: '50px' }} className="tg-sectionspace tg-haslayout tg-paddingbottomzero">
       <div className="container">
         <div className="row">
 
@@ -79,9 +110,12 @@ export default () =>
             featuredWineries.map(winery => {
               return(
                 <FeaturedWineryCard
+                  key={winery.name}
                   feature={winery.feature}
                   name={winery.name}
                   description={winery.description}
+                  cardTitleStyles={{ padding: '0' }}
+                  img={winery.img}
                 />
               )
             })
@@ -91,39 +125,52 @@ export default () =>
       </div>
     </section>
 
-    <section class="tg-sectionspace tg-haslayout tg-bgaboutus">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="tg-aboutus">
-              <div class="tg-sectionhead tg-sectionheadvthree">
-                <div class="tg-sectiontitle">
-                  <h2><span>Based in Sydney, Australia</span>We’re a digital studio that believe in the power of great ideas.</h2>
+
+    <section className="tg-haslayout" data-z-index="1" data-appear-top-offset="600" data-parallax="scroll" data-image-src="/static/images/twenty20_85ec5c1b-cad7-4b4e-a6ff-f8ba9a65c8ac copy.jpg">
+      <div className="tg-sectionspace tg-parallax tg-parallaxservices">
+        <div className="container">
+          <div className="row">
+            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div className="tg-sectionhead tg-sectionheadvone">
+                <div className="tg-sectiontitle">
+                  <h2>
+                    <span>Sonoma Coast, California</span>
+                    Wine Forged From Wind & Fog
+                  </h2>
                 </div>
               </div>
-              <div class="tg-description">
-                <p>Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos in. Et duo salutatus consequat, Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae.</p>
+            </div>
+            <div className="tg-services tg-servicesvfour">
+              <div className="col-lg-12 col-sm-12 col-md-4 col-lg-4">
+                <div className="tg-service">
+                  <span className="tg-serviceicon"><i style={{ fontSize: '60px' }} className="icon-location3"></i></span>
+                  <div className="tg-servicetitle">
+                    <h3><a href="javascript:void(0);(0);">The Newest AVA</a></h3>
+                  </div>
+                  <div className="tg-description">
+                    <p>Not only is the Petaluma Gap the newest AVA but it's also the closest AVA to San Francisco.</p>
+                  </div>
+                </div>
               </div>
-              <div class="tg-themefeatures tg-themefeaturesvtwo">
-                <div class="tg-themefeature">
-                  <span class="tg-themefeatureicon"><i class="icon-lightbulb"></i></span>
-                  <h3>Designing Department</h3>
-                  <div class="tg-description">
-                    <p>Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos consequat.</p>
+              <div className="col-lg-12 col-sm-12 col-md-4 col-lg-4">
+                <div className="tg-service">
+                  <span className="tg-serviceicon"><i style={{ fontSize: '60px' }} className="icon-cloud-wind"></i></span>
+                  <div className="tg-servicetitle">
+                    <h3><a href="javascript:void(0);(0);">Wind and Fog</a></h3>
+                  </div>
+                  <div className="tg-description">
+                    <p>The wind and fog from Bodega Bay cools the grapes resulting in a longer growing season and more intense flavors.</p>
                   </div>
                 </div>
-                <div class="tg-themefeature">
-                  <span class="tg-themefeatureicon"><i class="icon-lightbulb"></i></span>
-                  <h3>Designing Department</h3>
-                  <div class="tg-description">
-                    <p>Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos consequat.</p>
+              </div>
+              <div className="col-lg-12 col-sm-12 col-md-4 col-lg-4">
+                <div className="tg-service">
+                  <span className="tg-serviceicon tg-serviceicontargetarrow"><i style={{ fontSize: '60px' }} className="icon-wine"></i></span>
+                  <div className="tg-servicetitle">
+                    <h3><a href="javascript:void(0);(0);">Pinot Noir</a></h3>
                   </div>
-                </div>
-                <div class="tg-themefeature">
-                  <span class="tg-themefeatureicon"><i class="icon-lightbulb"></i></span>
-                  <h3>Designing Department</h3>
-                  <div class="tg-description">
-                    <p>Lorem ipsum dolor sit amet, eu per legimus referrentur. Ius ne viris repudiare, nominavi sententiae eos consequat.</p>
+                  <div className="tg-description">
+                    <p>The unique climate of the Gap makes for some intense Pinot Noirs that truly standout. The Gap also proudces outstanding Syrahs and Chardonnays.</p>
                   </div>
                 </div>
               </div>
@@ -131,23 +178,6 @@ export default () =>
           </div>
         </div>
       </div>
-      <ul className="tg-statistics">
-        <li>
-          <h3 data-from="0" data-to="200000" data-speed="5000" data-refresh-interval="50">200,000</h3>
-          <h4>Total Acres</h4>
-        </li>
-        <li>
-          <h3 data-from="0" data-to="4000" data-speed="5000" data-refresh-interval="50">4,000</h3>
-          <h4>Acres of Vineyards</h4>
-        </li>
-        <li>
-          <h3 data-from="0" data-to="80" data-speed="5000" data-refresh-interval="50">80</h3>
-          <h4>Plus Vineyards</h4>
-        </li>
-        <li>
-          <h3 data-from="0" data-to="150" data-speed="5000" data-refresh-interval="50">150</h3>
-          <h4>Yrs Farming Grapes</h4>
-        </li>
-      </ul>
     </section>
+
   </Layout>
