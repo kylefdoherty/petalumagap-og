@@ -18,3 +18,7 @@ coverage
 # test output
 test/**/out
 *.DS_Store
+
+static/vation-theme/HTML
+static/vation-theme/images
+static/vation-theme/documentation
