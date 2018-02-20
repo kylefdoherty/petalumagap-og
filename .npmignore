@@ -1,0 +1,24 @@
+# dependencies
+node_modules
+
+# build output
+.next
+
+# dependencies
+package-lock.json
+test/node_modules
+
+# logs
+*.log
+
+# coverage
+.nyc_output
+coverage
+
+# test output
+test/**/out
+*.DS_Store
+
+static/vation-theme/HTML
+static/vation-theme/images
+static/vation-theme/documentation
