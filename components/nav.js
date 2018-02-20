@@ -11,6 +11,10 @@ const navLinks = [
     name: 'Wineries',
     href: '/wineries',
   },
+  {
+    name: 'The Gap',
+    href: '/the-gap',
+  },
 ]
 
 const Nav = () => {
@@ -22,8 +26,8 @@ const Nav = () => {
         <div className="row">
           <div className="tg-headercontent tg-headercontentdark">
             <strong className="tg-logo">
-              <a href="">
-                <img className="tg-logowhite" src="/static/images/petaluma-gap-logo.png" alt="company logo here" />
+              <a href="/">
+                <img className="tg-logowhite" src="/static/images/petaluma-gap-logo-black.png" alt="Petaluma Gap Logo" />
                 <img src="/static/images/petaluma-gap-logo.png" alt="company logo here" />
               </a>
             </strong>

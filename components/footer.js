@@ -12,6 +12,7 @@ const Footer = () =>
                 <ul>
                   <li><a href="/">Home</a></li>
                   <li><a href="/wineries">Wineries</a></li>
+                  <li><a href="/the-gap">The Gap</a></li>
                 </ul>
               </div>
             </div>
@@ -22,28 +23,31 @@ const Footer = () =>
                 <h3>Get in Touch</h3>
               </div>
                <ul className="tg-contactinfo">
-                <li>Email: <a href="">hello@vation.com</a></li>
+                <li>Email: <a href="">hello@petalumagap.wine</a></li>
               </ul>
             </div>
           </div>
-          <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-            <div className="tg-footercolumn tg-widget tg-widgetsubscribe">
-              <div className="tg-widgettitle">
-                <h3>Subscribe</h3>
-              </div>
-              <div className="tg-widgetcontent">
-                <div className="tg-description">
-                  <p>Sign up with your email addres to get the latest news and happenings.</p>
+          {
+            false &&
+            <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+              <div className="tg-footercolumn tg-widget tg-widgetsubscribe">
+                <div className="tg-widgettitle">
+                  <h3>Subscribe</h3>
                 </div>
-                <form className="tg-formtheme tg-formsubscribe">
-                  <fieldset>
-                    <input type="email" name="email" className="form-control" placeholder="Enter your Email"/>
-                    <button type="submit"><i className="icon-envelope"></i></button>
-                  </fieldset>
-                </form>
+                <div className="tg-widgetcontent">
+                  <div className="tg-description">
+                    <p>Sign up with your email addres to get the latest news and happenings.</p>
+                  </div>
+                  <form className="tg-formtheme tg-formsubscribe">
+                    <fieldset>
+                      <input type="email" name="email" className="form-control" placeholder="Enter your Email"/>
+                      <button type="submit"><i className="icon-envelope"></i></button>
+                    </fieldset>
+                  </form>
+                </div>
               </div>
             </div>
-          </div>
+          }
         </div>
       </div>
     </div>

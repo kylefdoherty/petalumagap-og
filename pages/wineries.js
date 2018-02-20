@@ -27,18 +27,18 @@ const wineries = [
 ]
 
 const WineryCard = ({ name, type, img, website }) =>
-<div className="tg-portfolioitem tg-widthhalf business">
-  <figure>
-    <a href={website} target="_blank">
-      <img src={img.url} alt={img.altText} />
-      <div className="tg-hover tg-hovervone tg-portfoliohover"><h2><span>+</span></h2></div>
-    </a>
-  </figure>
-  <div className="tg-portfoliotitle">
-    <h2><a href={website} target="_blank">{name}</a></h2>
-    <span><a href={website} target="_blank">{type}</a></span>
+  <div className="tg-portfolioitem tg-widthhalf business">
+    <figure>
+      <a href={website} target="_blank">
+        <img src={img.url} alt={img.altText} />
+        <div className="tg-hover tg-hovervone tg-portfoliohover"><h2><span>+</span></h2></div>
+      </a>
+    </figure>
+    <div className="tg-portfoliotitle">
+      <h2><a href={website} target="_blank">{name}</a></h2>
+      <span><a href={website} target="_blank">{type}</a></span>
+    </div>
   </div>
-</div>
 
 const Wineries = ({ allowSort }) => {
   const heroStyles = {

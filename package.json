@@ -2,13 +2,17 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "jest",
+    "lint": "eslint src"
   },
   "dependencies": {
     "classnames": "^2.2.5",
     "next": "^4.2.3",
+    "numeral": "^2.0.6",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-visibility-sensor": "^3.11.0",
     "reactstrap": "^5.0.0-beta"
   },
   "name": "",
@@ -18,5 +22,16 @@
   "repositor": "",
   "author": "",
   "license": "",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "babel-jest": "^22.2.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^22.3.0"
+  }
 }
