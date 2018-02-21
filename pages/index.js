@@ -81,7 +81,7 @@ const featuredNews = [
     pubDate: 'Feb 15, 2018',
     url: 'https://www.aspendailynews.com/arts_and_entertainment/pfendler-vineyards-and-the-birth-of-the-petaluma-gap-ava/article_2b5ea6ba-11dd-11e8-abd9-cf8be01c6d52.html',
     img: {
-      url: 'https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180',
+      url: '/static/images/petaluma_gap_fog_small.jpg',
       altText: 'Aspen News - Petaluma Gap',
     },
   },

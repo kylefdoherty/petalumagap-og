@@ -16,7 +16,7 @@ const About = () =>
         <div className="container">
           <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <figure className="tg-processimg"><img src="http://via.placeholder.com/378x283" alt="image description" /></figure>
+              <figure className="tg-processimg"><img style={{ width: '378px', height: '283px' }} src="/static/images/vineyard-small.jpg" width="378" height="283" alt="image description" /></figure>
               <div style={{ height: 'auto' }} className="tg-processcontent">
                 <div className="tg-sectionhead tg-sectionheadvtwo">
                   <div className="tg-sectiontitle">
