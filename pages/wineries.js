@@ -40,12 +40,20 @@ const WineryCard = ({ name, type, img, website }) =>
     </div>
   </div>
 
-const Wineries = ({ allowSort }) => {
+
+const GapWineriesTitle = 'Petaluma Gap Wineries - The Closest Wineries to San Francisco | PetalumaGap.wine'
+const GapWineriesDescription = `
+  Petaluma Gap wineries are only 30 miles north of San Francisco. In addition to
+  being the closest wineries to San Francisco they're also producing some of the
+  most interesting wines in California.
+`
+
+const Wineries = ({ showSort }) => {
   const heroStyles = {
     minHeight: '300px',
   }
   return (
-    <Layout>
+    <Layout title={GapWineriesTitle} description={GapWineriesDescription}>
       <HeroImg
         header="Gap Wineries"
         styles={heroStyles}
@@ -57,7 +65,7 @@ const Wineries = ({ allowSort }) => {
             <div id="tg-portfoliovsix" className="tg-portfolio tg-portfoliovsix">
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               {
-                allowSort &&
+                showSort &&
                 <ul id="tg-navfilterbale" className="tg-navfilterbale tg-optionset">
                   <li><a className="tg-active" data-filter="*" href="">All</a></li>
                   <li><a data-filter=".business" href="">Wineries with Tasting Rooms</a></li>

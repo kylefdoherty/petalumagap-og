@@ -142,6 +142,8 @@ class FactStat extends Component {
   }
 }
 
+
+// TODO - move this into a container component
 class FactsStatsList extends Component {
   constructor(props) {
     super(props)
