@@ -5,9 +5,6 @@ import SectionHeader from '../components/section-header'
 import NewsCard from '../components/news-card'
 import FactsStatsList from '../components/facts-stats'
 
-import { Card, CardBody, Button, CardTitle, CardText, CardImg } from 'reactstrap'
-
-
 const featuredWineries = [
   {
     feature: 'Winery Feature',
@@ -97,10 +94,16 @@ const theStyles = {
   flexWrap: 'wrap',
 }
 
-
+const HomeTitle = 'Petaluma Gap Wines - Wind to Wine | PetalumaGap.wine'
+const HomeDescription = `
+  Petaluma Gap is America's newest and most interesting American Viticulture
+  Area (AVA). Best known for bold & unique Pinot Noir as well as Chardonnay and
+  Syrah. Located only 30 miles North of San Francisco via Highway 101 make it
+  the most accessible wine region in the Bay Area.
+`
 
 export default () =>
-  <Layout>
+  <Layout title={HomeTitle} description={HomeDescription}>
     <HeroImg
       header="Petaluma Gap AVA"
       subHeader="The newest and most unique American Viticulture Area in U.S."
