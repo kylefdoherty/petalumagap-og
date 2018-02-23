@@ -1,30 +1,6 @@
 import Layout from '../components/layout'
 import HeroImg from '../components/hero-img'
-
-const wineries = [
-  {
-    name: 'Kastania Vineyards',
-    img: {
-      url: '/static/images/wineries/kastania.jpg',
-      altText: 'Kstania Vineyards',
-    },
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra ligula vitae ligula hendrerit sodales sit amet eget neque. Integer porta, tortor facilisis volutpat blandit, neque felis pretium ligula, ultricies dignissim risus nulla sed metus. Cras eu pharetra est.',
-    varitelas: ['Pinot Noir', 'Cabernet Franc', 'Cabernet Savingnon'],
-    website: 'http://www.kastaniavineyards.com/',
-    type: 'Vineyard & Winery',
-  },
-  {
-    name: 'Black Kite Cellars',
-    img: {
-      url: '/static/images/wineries/black_kite.jpg',
-      altText: 'Kite Cellars',
-    },
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra ligula vitae ligula hendrerit sodales sit amet eget neque. Integer porta, tortor facilisis volutpat blandit, neque felis pretium ligula, ultricies dignissim risus nulla sed metus. Cras eu pharetra est.',
-    varitelas: ['Pinot Noir', 'Chardonnay'],
-    website: 'http://blackkitecellars.com/',
-    type: 'Vineyard & Winery',
-  }
-]
+import wineries from '../constants/wineries'
 
 const WineryCard = ({ name, type, img, website }) =>
   <div className="tg-portfolioitem tg-widthhalf business">
