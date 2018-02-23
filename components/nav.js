@@ -15,6 +15,10 @@ const navLinks = [
     name: 'The Gap',
     href: '/the-gap',
   },
+  {
+    name: 'Tasting',
+    href: '/tasting',
+  },
 ]
 
 const Nav = () => {

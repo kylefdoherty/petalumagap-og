@@ -24,7 +24,7 @@ const wineries = [
   {
     name: 'Adobe Road Winery',
     img: {
-      url: 'http://via.placeholder.com/619x437',
+      url: '/static/images/wineries/adobe_road_winery.jpg',
       altText: 'Placeholder Alt Text',
     },
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra ligula vitae ligula hendrerit sodales sit amet eget neque. Integer porta, tortor facilisis volutpat blandit, neque felis pretium ligula, ultricies dignissim risus nulla sed metus. Cras eu pharetra est.',
@@ -35,7 +35,7 @@ const wineries = [
   {
     name: 'Azari',
     img: {
-      url: 'http://via.placeholder.com/619x437',
+      url: '/static/images/wineries/azari_winery.jpg',
       altText: 'Placeholder Alt Text',
     },
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra ligula vitae ligula hendrerit sodales sit amet eget neque. Integer porta, tortor facilisis volutpat blandit, neque felis pretium ligula, ultricies dignissim risus nulla sed metus. Cras eu pharetra est.',
@@ -46,7 +46,7 @@ const wineries = [
   {
     name: 'Cline Cellars',
     img: {
-      url: 'http://via.placeholder.com/619x437',
+      url: '/static/images/wineries/cline_cellars.jpg',
       altText: 'Placeholder Alt Text',
     },
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra ligula vitae ligula hendrerit sodales sit amet eget neque. Integer porta, tortor facilisis volutpat blandit, neque felis pretium ligula, ultricies dignissim risus nulla sed metus. Cras eu pharetra est.',
@@ -57,7 +57,7 @@ const wineries = [
   {
     name: 'Clouds Rest',
     img: {
-      url: 'http://via.placeholder.com/619x437',
+      url: '/static/images/wineries/cloudrest.jpg',
       altText: 'Placeholder Alt Text',
     },
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra ligula vitae ligula hendrerit sodales sit amet eget neque. Integer porta, tortor facilisis volutpat blandit, neque felis pretium ligula, ultricies dignissim risus nulla sed metus. Cras eu pharetra est.',
@@ -68,7 +68,7 @@ const wineries = [
   {
     name: 'DeLouch Vineyards',
     img: {
-      url: 'http://via.placeholder.com/619x437',
+      url: '/static/images/wineries/deloach-vineyards.jpg',
       altText: 'Placeholder Alt Text',
     },
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra ligula vitae ligula hendrerit sodales sit amet eget neque. Integer porta, tortor facilisis volutpat blandit, neque felis pretium ligula, ultricies dignissim risus nulla sed metus. Cras eu pharetra est.',
@@ -79,7 +79,7 @@ const wineries = [
   {
     name: 'Enriquez Wines',
     img: {
-      url: 'http://via.placeholder.com/619x437',
+      url: '/static/images/wineries/enriquez_wines.jpeg',
       altText: 'Placeholder Alt Text',
     },
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra ligula vitae ligula hendrerit sodales sit amet eget neque. Integer porta, tortor facilisis volutpat blandit, neque felis pretium ligula, ultricies dignissim risus nulla sed metus. Cras eu pharetra est.',
