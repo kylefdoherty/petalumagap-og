@@ -1,27 +1,5 @@
 const wineries = [
   {
-    name: 'Kastania Vineyards',
-    img: {
-      url: '/static/images/wineries/kastania.jpg',
-      altText: 'Kstania Vineyards',
-    },
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra ligula vitae ligula hendrerit sodales sit amet eget neque. Integer porta, tortor facilisis volutpat blandit, neque felis pretium ligula, ultricies dignissim risus nulla sed metus. Cras eu pharetra est.',
-    varitelas: ['Pinot Noir', 'Cabernet Franc', 'Cabernet Savingnon'],
-    website: 'http://www.kastaniavineyards.com/',
-    type: 'Vineyard & Winery',
-  },
-  {
-    name: 'Black Kite Cellars',
-    img: {
-      url: '/static/images/wineries/black_kite.jpg',
-      altText: 'Kite Cellars',
-    },
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra ligula vitae ligula hendrerit sodales sit amet eget neque. Integer porta, tortor facilisis volutpat blandit, neque felis pretium ligula, ultricies dignissim risus nulla sed metus. Cras eu pharetra est.',
-    varitelas: ['Pinot Noir', 'Chardonnay'],
-    website: 'http://blackkitecellars.com/',
-    type: 'Vineyard & Winery',
-  },
-  {
     name: 'Adobe Road Winery',
     img: {
       url: '/static/images/wineries/adobe_road_winery.jpg',
@@ -41,6 +19,28 @@ const wineries = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra ligula vitae ligula hendrerit sodales sit amet eget neque. Integer porta, tortor facilisis volutpat blandit, neque felis pretium ligula, ultricies dignissim risus nulla sed metus. Cras eu pharetra est.',
     varitelas: ['Pinot Noir', 'Chardonnay'],
     website: 'https://www.azarivineyards.com/',
+    type: 'Vineyard & Winery',
+  },
+  {
+    name: 'Kastania Vineyards',
+    img: {
+      url: '/static/images/wineries/kastania.jpg',
+      altText: 'Kstania Vineyards',
+    },
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra ligula vitae ligula hendrerit sodales sit amet eget neque. Integer porta, tortor facilisis volutpat blandit, neque felis pretium ligula, ultricies dignissim risus nulla sed metus. Cras eu pharetra est.',
+    varitelas: ['Pinot Noir', 'Cabernet Franc', 'Cabernet Savingnon'],
+    website: 'http://www.kastaniavineyards.com/',
+    type: 'Vineyard & Winery',
+  },
+  {
+    name: 'Black Kite Cellars',
+    img: {
+      url: '/static/images/wineries/black_kite.jpg',
+      altText: 'Kite Cellars',
+    },
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra ligula vitae ligula hendrerit sodales sit amet eget neque. Integer porta, tortor facilisis volutpat blandit, neque felis pretium ligula, ultricies dignissim risus nulla sed metus. Cras eu pharetra est.',
+    varitelas: ['Pinot Noir', 'Chardonnay'],
+    website: 'http://blackkitecellars.com/',
     type: 'Vineyard & Winery',
   },
   {
@@ -90,7 +90,7 @@ const wineries = [
   {
     name: 'Fogline Vineyards',
     img: {
-      url: 'http://via.placeholder.com/619x437',
+      url: '/static/images/wineries/fogline.jpg',
       altText: 'Placeholder Alt Text',
     },
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra ligula vitae ligula hendrerit sodales sit amet eget neque. Integer porta, tortor facilisis volutpat blandit, neque felis pretium ligula, ultricies dignissim risus nulla sed metus. Cras eu pharetra est.',
@@ -99,20 +99,9 @@ const wineries = [
     type: 'Vineyard & Winery',
   },
   {
-    name: 'Jackson Family Wines',
-    img: {
-      url: 'http://via.placeholder.com/619x437',
-      altText: 'Placeholder Alt Text',
-    },
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra ligula vitae ligula hendrerit sodales sit amet eget neque. Integer porta, tortor facilisis volutpat blandit, neque felis pretium ligula, ultricies dignissim risus nulla sed metus. Cras eu pharetra est.',
-    varitelas: ['Pinot Noir', 'Chardonnay'],
-    website: 'http://jacksonfamilywines.com/',
-    type: 'Vineyard & Winery',
-  },
-  {
     name: 'Karah Estate Vineyard',
     img: {
-      url: 'http://via.placeholder.com/619x437',
+      url: '/static/images/wineries/karah_estate_vineyard.jpeg',
       altText: 'Placeholder Alt Text',
     },
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra ligula vitae ligula hendrerit sodales sit amet eget neque. Integer porta, tortor facilisis volutpat blandit, neque felis pretium ligula, ultricies dignissim risus nulla sed metus. Cras eu pharetra est.',
@@ -121,20 +110,9 @@ const wineries = [
     type: 'Vineyard & Winery',
   },
   {
-    name: 'Keller Estate',
-    img: {
-      url: 'http://via.placeholder.com/619x437',
-      altText: 'Placeholder Alt Text',
-    },
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra ligula vitae ligula hendrerit sodales sit amet eget neque. Integer porta, tortor facilisis volutpat blandit, neque felis pretium ligula, ultricies dignissim risus nulla sed metus. Cras eu pharetra est.',
-    varitelas: ['Pinot Noir', 'Chardonnay'],
-    website: 'http://www.kellerestate.com/',
-    type: 'Vineyard & Winery',
-  },
-  {
     name: 'Macphail Wines',
     img: {
-      url: 'http://via.placeholder.com/619x437',
+      url: '/static/images/wineries/macphail_wines.jpg',
       altText: 'Placeholder Alt Text',
     },
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra ligula vitae ligula hendrerit sodales sit amet eget neque. Integer porta, tortor facilisis volutpat blandit, neque felis pretium ligula, ultricies dignissim risus nulla sed metus. Cras eu pharetra est.',
@@ -145,12 +123,26 @@ const wineries = [
   {
     name: 'McEvoy Ranch',
     img: {
-      url: 'http://via.placeholder.com/619x437',
+      url: '/static/images/wineries/mcevoy_ranch.jpg',
       altText: 'Placeholder Alt Text',
     },
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra ligula vitae ligula hendrerit sodales sit amet eget neque. Integer porta, tortor facilisis volutpat blandit, neque felis pretium ligula, ultricies dignissim risus nulla sed metus. Cras eu pharetra est.',
     varitelas: ['Pinot Noir', 'Chardonnay'],
     website: 'https://www.mcevoyranch.com/',
+    type: 'Vineyard & Winery',
+  },
+]
+
+const wineriesNoImage = [
+  {
+    name: 'Keller Estate',
+    img: {
+      url: '/static/images/wineries/keller_estate.jpg',
+      altText: 'Placeholder Alt Text',
+    },
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra ligula vitae ligula hendrerit sodales sit amet eget neque. Integer porta, tortor facilisis volutpat blandit, neque felis pretium ligula, ultricies dignissim risus nulla sed metus. Cras eu pharetra est.',
+    varitelas: ['Pinot Noir', 'Chardonnay'],
+    website: 'http://www.kellerestate.com/',
     type: 'Vineyard & Winery',
   },
   {
