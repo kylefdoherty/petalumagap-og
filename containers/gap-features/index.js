@@ -1,5 +1,5 @@
 const GapFeatures = () =>
-  <section className="tg-haslayout" data-z-index="1" data-appear-top-offset="600" data-parallax="scroll" data-image-src="/static/images/twenty20_85ec5c1b-cad7-4b4e-a6ff-f8ba9a65c8ac copy.jpg">
+  <section className="tg-haslayout" data-z-index="1" data-appear-top-offset="600" data-parallax="scroll" data-image-src="/static/images/sonoma-coast-fog.jpg">
     <div className="tg-sectionspace tg-parallax tg-parallaxservices">
       <div className="container">
         <div className="row">
